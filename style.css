@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 62, 19);
+}
+
+/* nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: rgb(77, 77, 239);
+    font-size: 1.04rem;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(239, 136, 77);
+    transform: scaleX(0);  
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+} */
+
+.left {
+    font-size: 2.5rem;
+    margin: 23px;
+    color: rgb(255, 111, 111);
+}
+
+.date{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    padding: 10px; 
+    border-radius: 5px;
+    width: 30%;
+    height: auto; 
+}
+
+.date input{
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+
+.inputStudent {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 100px 220px 0 220px;
+    border: 2px solid rgb(237, 67, 67); 
+    padding: 10px; 
+    border-radius: 5px;
+    width: 70%;
+    height: auto; 
+}
+
+h1 {
+    padding-top: 0px;
+    color: black;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    font-size: 1.6rem;
+    border-collapse: collapse;
+    margin-top: 20px;  
+    color: aliceblue;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid rgb(237, 67, 67);
+}
+
+table th {
+    background-color: rgb(18, 62, 19);
+}
+table tbody {
+    color: black;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(152, 219, 207);
+}
+table tr:nth-child(odd) {
+    background-color: rgb(236, 244, 246);
+}
+
+table tr:hover {
+    background-color: rgb(243, 228, 179);
+    color: rgb(255, 255, 255);
+}
+.nag tr:hover {
+    background-color: rgb(243, 228, 179);
+    color: rgb(13, 12, 12);
+}
+
+.btn{
+    position: relative;
+    width: 30%;
+    height: 45px;
+    margin: 15px auto 0 auto;
+    background: transparent;
+    border: 2px solid rgb(66, 218, 32);
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color:#a4ffd2;
+    font-weight: 600;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    z-index: -1;
+    background: linear-gradient(#081b29,rgb(66, 218, 32),#081b29,rgb(66, 218, 32));
+    transition: .5s;
+}
+
+.btn:hover::before{
+    top:0;
+}
+
+input {
+    width: 50%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgb(18, 62, 19);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: rgb(221, 59, 208);
+    box-shadow: 0 0 8px rgba(77, 77, 239, 0.6);
+    background-color: rgb(187, 233, 60);
+}
+
+input:hover {
+    border-color: rgb(239, 136, 77);
+}
+
+select {
+    width: 92%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid rgb(18, 62, 19);
+    border-radius: 8px;  
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+select:hover {
+    border-color: rgb(239, 136, 77);
+}
+
+select:focus {
+    border-color: rgb(221, 59, 208);
+}
+
+select {
+    appearance: none; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+
+.addedStudent{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    color: black;
+    align-items: center;
+    text-align: center;
+    margin: 100px 220px 0 220px;
+    border: 2px solid rgb(237, 67, 67); 
+    padding: 10px; 
+    border-radius: 5px;
+    width: 70%;
+    height: auto;  
+}
+.saveStudent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+    align-items: center;
+    text-align: center;
+    margin: 0px 220px 0 500px;
+    padding: 10px; 
+    width: 30%;
+    height: auto;  
+}
+
+.status-indicator {
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.present {
+    color: green;
+}
+
+.absent {
+    color: red;
+}
+
+#attendanceDate {
+    font-weight: bold;
+    font-size: 16px; 
+}
+

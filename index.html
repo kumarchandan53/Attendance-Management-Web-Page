@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Sheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>+
+        <nav>
+            <div class="left">Class Attendence</div>
+        </nav>
+
+    </header>
+    <main>
+        
+        <div class="inputStudent">
+            <h1><b><u>ADD NEW STUDENTS</u></b></h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Branch</th>
+                        <th>Roll No</th>
+                        <th>
+                            Registration No
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="studentName" placeholder="Enter Name"></td>
+                        <td>
+                            <select name="branch" id="studentBranch">
+                                <option value="">Select</option>
+                                <option value="CSE">C.S.E.</option>
+                                <option value="ECE">E.C.E.</option>
+                                <option value="EE">E.E.</option>
+                                <option value="Civil">Civil</option>
+                                <option value="AI ML">Ai & Ml</option>
+                            </select>
+                        </td>
+                        <td><input type="number" id="studentRollNo" placeholder="Enter Roll No"></td>
+                        <td><input type="text" id="studentRegistrationNo" placeholder="Enter Registration No"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <button type="submit" id="addStudentBtn" class="btn">Add Student </button>
+
+            
+        </div>
+
+        <div class="date">
+            <input type="text" id="attendanceDate" placeholder="date" readonly>
+        </div>
+
+        <div class="addedStudent">
+
+            <h1><b><u>ADDED STUDENTS</u></b></h1>
+
+            <table id="addedStudentTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Branch</th>
+                        <th>Roll No </th>
+                        <th>Registration No</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="nag">
+                  
+                </tbody>
+            </table>
+            
+        </div>
+
+        <div class="saveStudent">
+            <button type="submit" id="saveStudentBtn" class="btn">Save</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
